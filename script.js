@@ -40,4 +40,15 @@ nav.addEventListener('mouseleave', function(){
 })
 }
 
-navAnimation()
+// navAnimation()
+
+let rightelement = document.querySelectorAll('.right-elem')
+
+rightelement.forEach( function(elem){
+    elem.addEventListener('mouseenter', function(){
+        console.log('hello')
+    })
+    elem.addEventListener('mouseleave', function(){
+        console.log('bye')
+    })
+})
